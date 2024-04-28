@@ -1,34 +1,38 @@
 /* General Styles */
 body {
+
     font-size: 20px;
     font-family: "Times New Roman", serif;
     line-height: 1.5;
     color: #000000;
     background-color: #ffffff;
     padding-top: 50px;
-    display: flex;
     justify-content: center;
     border-style: solid;
-    border-color: #000000;
+    border-color: #6b5c5c;
     border-width: 0.0001cap;
+    display: flex;
+    margin: 10%;
     
 }
 
 .content {
+
     max-width: 600px;
-    margin: 20px;
-    padding: 20px;
+    margin: 0 auto;
 
 }
 
-/* Header Styles */
+/* Header configurations */
 header {
+
     text-align: center;
     margin-bottom: 20px;
 }
 
 header h1,
 header h2 {
+
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin: 10px 0;
@@ -36,15 +40,15 @@ header h2 {
 }
 
 header h2 {
+
     color: #006EB6;
     font-size: 75%;
-    text-decoration: underline;
-    text-decoration-color: #000000;
 
 }
 
-/* Main Content Styles */
+/* Main configurations */
 main {
+
     text-align: left;
 }
 
@@ -55,17 +59,21 @@ main {
 }
 
 .numbered_list {
+
     padding-left: 20px;
 }
 
-/* Footer Styles */
+/* Footer configurations */
 footer {
+
     text-align: center;
     margin-top: 20px;
     padding-top: 30px;
 }
 
 footer .logo {
+
     width: 150px;
     height: auto;
+    padding-bottom: 20px;
 }
