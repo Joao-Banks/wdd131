@@ -8,7 +8,7 @@ if (chosenTheme === "dark") {
 
     document.body.classList.add("dark");
     
-    document.getElementById("logo").src = "university_logo_dark_theme.webp";
+    document.getElementById("logo").src = "university_logo_dark_theme.png";
 
 }
 
