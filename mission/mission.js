@@ -16,7 +16,7 @@ else {
 
     document.body.classList.remove("dark");
 
-    document.getElementById("logo").src = "university_logo.webp";
+    document.getElementById("logo").src = "images/university_logo.webp";
 
 }
 }
