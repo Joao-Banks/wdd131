@@ -60,7 +60,7 @@ main {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr  ; /* Three columns of equal width */
   gap: 1rem;
 }
 
@@ -74,6 +74,7 @@ img {
   height: 250px;
   width: 250px;
   object-fit: cover;
+  margin: 0 auto;
 }
 
 figure img {
@@ -126,7 +127,7 @@ button.menu::after {
 }
 
 /* Media query for small tablets and larger */
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
   .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
