@@ -106,11 +106,6 @@ button.menu::after {
     align-items: center;
   }
 
-  nav {
-    display: none;
-    flex-grow: 1;
-  }
-
   nav.active {
     display: block;
   }
@@ -127,10 +122,9 @@ button.menu::after {
 }
 
 /* Media query for small tablets and larger */
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 601px) and (max-width: 999px) {
   .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
   }
 }
 
@@ -142,6 +136,6 @@ button.menu::after {
   }
 
   button.menu {
-    display: none;
+    display: none; /* Hide menu button on large screens */
   }
 }
