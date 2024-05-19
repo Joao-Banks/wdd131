@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: 'Mooli', sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    color: var(--text-dark);
+}
+
+a:link,
+a:visited {
+    color: var(--accent-color);
+}
+
+header,
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 10px;
+    text-align: center;
+}
+
+header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    color: white; /* Set text color to white for all list elements */
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.gallery figure {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid white; /* Add a white frame around images */
+}
+
+figure img {
+
+    border: 5px solid white;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+.hide {
+    display: none;
+}
+
+.close-viewer {
+    cursor: pointer; /* Change cursor to indicate */
+}
+
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: grid;
+    place-items: center;
+    z-index: 1000;
+}
+
+.viewer img {
+    max-height: 100%;
+}
+
+.viewer span {
+    color: white;
+    font-size: 24px;
+    grid-row: 1;
+}
+
+.enlarge {
+    cursor: pointer; /* Change cursor to indicate clickability */
+}
+
+/* Style for the enlarged view */
+.viewer img {
+    margin-top: -20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56%;
+    height: auto;
+}
+
+.enlarged-view img {
+    min-width: 3000px; /* Limit maximum width */
+    min-height: 3000px; /* Limit maximum height */
+}
+
+@media screen and (min-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header button {
+        display: none;
+    }
+}
