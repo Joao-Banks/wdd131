@@ -50,7 +50,7 @@ const recipes = [
     {
         title: "Sweet Potato Waffle",
         description: "A delightful sweet potato waffle...",
-        image: "images/sweet-potato_waffle-md.jpg",
+        image: "images/sweet-potato-waffle-md.jpg",
         rating: 4
     }
 ];
