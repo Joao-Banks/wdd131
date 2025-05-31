@@ -117,10 +117,11 @@ article {
 }
 
 article img {
-    max-width: 500px;
-    border-radius: 8px;
-    padding-top: 25px;
-    margin: 0 auto; /* Center the image */
+    display: block;
+    margin: 0 auto 15px;
+    width: 120px;
+    height: auto;
+
 }
 
 footer {

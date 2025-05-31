@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
             date: "July 5, 2022",
             ageRange: "10-14",
             genre: "Fantasy",
-            rating: "****",
+            rating: "⭐⭐⭐⭐",
             description: "If you enjoy stories about seventh sons of seventh sons and magyk, this is the book for you.",
             image: "https://m.media-amazon.com/images/I/61F9Qrr3YeL._AC_UF1000,1000_QL80_.jpg"
         },
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             date: "December 12, 2021",
             ageRange: "12-16",
             genre: "Fantasy",
-            rating: "*****",
+            rating: "⭐⭐⭐⭐⭐",
             description: "Magnus Chase, a homeless boy living in Boston, finds out he is the son of a Norse god.",
             image: "https://m.media-amazon.com/images/I/91VfcPVCd1L._AC_UF1000,1000_QL80_.jpg"
         },
