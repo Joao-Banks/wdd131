@@ -17,26 +17,38 @@
     <script type="module" src="main.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="images/recipe-book.png" alt="Recipe Book Logo">
-        <h1>Recipe Book</h1>
-    </header>
-    <main>
-        <section class="search">
-            <input type="text" id="search" placeholder="Search recipes...">
-            <button id="search-button">Search</button>
-        </section>
-        <section class="recipes">
-            <!-- Recipe items will be injected here by JavaScript -->
-        </section>
-    </main>
-    <footer>
-        <p><a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a></p>
-        <div class="social">
-            <a href="#"><img src="images/instagram_icon.svg" alt="Instagram"></a>
-            <a href="#"><img src="images/youtube_icon.svg" alt="YouTube"></a>
-            <a href="#"><img src="images/pinterest_icon.svg" alt="Pinterest"></a>
-        </div>
-    </footer>
+
+  
+  <header>
+    <img src="images/recipe-book.png" alt="Recipe Book Icon" class="logo" />
+    <h1>RecipeBook</h1>
+  </header>
+
+<main>
+  <form class="search-bar">
+    <label for="search" class="visually-hidden"></label>
+    <input type="text" id="search" placeholder="Find a recipe">
+    <button type="submit" aria-label="Search">
+      🔍
+    </button>
+  </form>
+  <div class="recipe-container"></div>
+</main>
+
+
+  <footer>
+    <p class="attribution">
+      <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+        Recipe icons created by Freepik - Flaticon
+      </a>
+    </p>
+    <div class="social">
+      <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+      <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+      <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+    </div>
+  </footer>
+<script type="module" src="scripts.js"></script>
+
 </body>
 </html>
