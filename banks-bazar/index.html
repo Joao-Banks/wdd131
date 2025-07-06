@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banks Bazar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Banks Bazar</h1>
+    <p>Your personal space to sell what you no longer need!</p>
+  </header>
+
+  <main>
+    <section id="item-form-section">
+      <h2>Add New Item</h2>
+      <form id="item-form">
+        <input type="text" id="item-name" placeholder="Item Name" required />
+        <input type="number" id="item-price" placeholder="Price" required />
+        <textarea id="item-desc" placeholder="Item Description" required></textarea>
+        <button type="submit">Add Item</button>
+      </form>
+    </section>
+
+    <section id="items-section">
+      <h2>Items for Sale</h2>
+      <div id="items-container"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
