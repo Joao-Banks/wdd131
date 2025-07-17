@@ -1,0 +1,38 @@
+<!-- clothes.html (Same structure applies to books.html and paraphernalia.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothes | Banks Bazar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Banks Bazar</div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clothes.html">Clothes</a></li>
+        <li><a href="paraphernalia.html">Paraphernalia</a></li>
+        <li><a href="books.html">Books</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Clothes</h1>
+    <section id="items-container" class="item-grid"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Banks Bazar</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    loadItems("clothes");
+  </script>
+</body>
+</html>
+

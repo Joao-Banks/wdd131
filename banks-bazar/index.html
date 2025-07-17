@@ -2,33 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Banks Bazar</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BANKS ULTIMATE BAZAR</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Banks Bazar</h1>
-    <p>Your personal space to sell what you no longer need!</p>
+  <header class="site-header">
+    <div class="header-top">
+      <img src="../banks-bazar/images/best-logo-ever.webp" alt="Banks Bazar Logo" class="site-logo" />
+      <h1>BANKS ULTIMATE BAZAR</h1>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="clothes.html">Clothes</a></li>
+        <li><a href="paraphernalia.html">Paraphernalia</a></li>
+        <li><a href="books.html">Books</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section id="item-form-section">
-      <h2>Add New Item</h2>
-      <form id="item-form">
-        <input type="text" id="item-name" placeholder="Item Name" required />
-        <input type="number" id="item-price" placeholder="Price" required />
-        <textarea id="item-desc" placeholder="Item Description" required></textarea>
-        <button type="submit">Add Item</button>
-      </form>
-    </section>
+  <!-- 🔥 Description Box -->
+  <section class="site-description">
+    <div class="description-box">
+      <p>Welcome to Banks Bazar – your go-to digital skate shop where I sell my old gear, threads, and reads. Whether you're looking to upgrade your style or pick up some rad skate culture items, you’re in the right place.</p>
+    </div>
+  </section>
 
-    <section id="items-section">
-      <h2>Items for Sale</h2>
-      <div id="items-container"></div>
+  <main>
+    <section class="categories">
+      <div class="category-card clothes">
+        <h2>Clothes</h2>
+      </div>
+      <div class="category-card paraphernalia">
+        <h2>Paraphernalia</h2>
+      </div>
+      <div class="category-card books">
+        <h2>Books</h2>
+      </div>
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <footer class="site-footer">
+    <p>&copy; 2025 Skate Shop. All rights reserved.</p>
+  </footer>
 </body>
 </html>

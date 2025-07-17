@@ -1,0 +1,177 @@
+/* Reset + Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  background-color: #111;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background-color: #000;
+  padding: 1rem 2rem;
+  border-bottom: 3px solid #f00;
+}
+
+.header-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* Removed justify-content */
+}
+
+.site-logo {
+  height: 100px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  flex-shrink: 0;
+  z-index: 2; /* keep logo above title */
+}
+
+.site-header h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  color: #f00;
+  text-shadow: 2px 2px 0 #fff;
+  letter-spacing: 2px;
+  margin: 0;
+  z-index: 1; /* behind logo */
+  white-space: nowrap;
+  text-align: center;
+  width: max-content;
+  max-width: 70vw;
+}
+
+/* Navigation */
+.main-nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #222;
+  border: 2px solid #f00;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-nav a:hover {
+  background-color: #f00;
+  color: #000;
+}
+
+/* 🔥 Description Box */
+.site-description {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.description-box {
+  max-width: 800px;
+  background-color: #1c1c1c;
+  border: 2px solid #f00;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #eee;
+  line-height: 1.6;
+  box-shadow: 3px 3px 0 #000;
+  border-radius: 6px;
+}
+
+/* Category Cards */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.category-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  min-height: 200px;
+  border: 2px solid #f00;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-shadow:
+    -1px -1px 0 #f00,
+     1px -1px 0 #f00,
+    -1px  1px 0 #f00,
+     1px  1px 0 #f00,
+     2px  2px 4px #000;
+  transition: transform 0.3s ease;
+  box-shadow: 4px 4px 0 #000;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+/* Background images for each card */
+.category-card.clothes {
+  background-image: url('../banks-bazar/images/john-travolta2.webp');
+}
+
+.category-card.paraphernalia {
+  background-image: url('../banks-bazar/images/paraphernalia-better.webp');
+}
+
+.category-card.books {
+  background-image: url('../banks-bazar/images/reading-better.webp');
+}
+
+/* Footer */
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #f00;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
