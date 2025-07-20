@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const books = [
     {
       title: 'The Republic',
-      img: '../books/images-books/plato-republic.webp',
+      img: '../books/images-books/the-republic.webp',
       price: '$12.99',
       description: 'Plato’s foundational work on justice and political theory.'
     },
@@ -29,7 +29,32 @@ document.addEventListener('DOMContentLoaded', () => {
       img: '../books/images-books/meditations-marcus-aurelius.webp',
       price: '$9.99',
       description: 'Marcus Aurelius’s stoic reflections on life, leadership, and virtue.'
+    },
+    {
+      title: 'Interpretation of Dreams',
+      img: '../books/images-books/interpretation-of-dreams.webp',
+      price: '$11.99',
+      description: 'It presents Freud’s theory that dreams reveal unconscious desires and thoughts through symbolic imagery..'
+    },
+    {
+      title: 'Crime and Punishment',
+      img: '../books/images-books/crime-and-punishment.webp',
+      price: '$10.99',
+      description: 'Crime and Punishment explores the torment moral dilemmas of a man after committing murder..'
+    },
+    {
+      title: 'Moby-Dick',
+      img: '../books/images-books/moby-dick.webp',
+      price: '$8.00',
+      description: ' Captain Ahab in his obsessive quest to hunt the elusive white whale, symbolizing the struggle of man against nature and fate.'
+    },
+    {
+      title: 'Discourse on Method',
+      img: '../books/images-books/discourse-on-method.webp',
+      price: '$7.50',
+      description: '"Cogito Ergo Sum", as written by Descartes outlines the metaphysical philosophy of being.'
     }
+
   ];
 
   const container = document.getElementById('philosophy-books-container');
