@@ -236,6 +236,10 @@ body {
 }
 
 /* Light Mode Overrides */
+body.light-mode .site-logo {
+  filter: none;
+}
+
 body.light-mode {
   background-color: #fff;
   color: #111;
@@ -270,8 +274,13 @@ body.light-mode .description-box {
 }
 
 body.light-mode .category-card {
-  color: #111;
-  text-shadow: none;
+  color: #f9f9f9;
+  text-shadow:
+    -1px -1px 0 #f00,
+     1px -1px 0 #f00,
+    -1px  1px 0 #f00,
+     1px  1px 0 #f00,
+     2px  2px 4px #000;
   border-color: #900;
   box-shadow: 2px 2px 5px #ccc;
 }
@@ -285,6 +294,10 @@ body.light-mode .about-creator {
 body.light-mode .creator-description h2 {
   color: #900;
   text-shadow: none;
+}
+
+body.light-mode .creator-description p {
+  color: #111;
 }
 
 body.light-mode .creator-image img {
