@@ -235,6 +235,77 @@ body {
   color: #fff;
 }
 
+/* Light Mode Overrides */
+body.light-mode {
+  background-color: #fff;
+  color: #111;
+}
+
+body.light-mode .site-header {
+  background-color: #eee;
+  border-bottom-color: #900;
+}
+
+body.light-mode .site-header h1 {
+  color: #900;
+  text-shadow: none;
+}
+
+body.light-mode .main-nav a {
+  background-color: #ddd;
+  color: #111;
+  border-color: #900;
+}
+
+body.light-mode .main-nav a:hover {
+  background-color: #900;
+  color: #fff;
+}
+
+body.light-mode .description-box {
+  background-color: #f9f9f9;
+  color: #222;
+  border-color: #900;
+  box-shadow: none;
+}
+
+body.light-mode .category-card {
+  color: #111;
+  text-shadow: none;
+  border-color: #900;
+  box-shadow: 2px 2px 5px #ccc;
+}
+
+body.light-mode .about-creator {
+  background-color: #f0f0f0;
+  border-color: #900;
+  color: #111;
+}
+
+body.light-mode .creator-description h2 {
+  color: #900;
+  text-shadow: none;
+}
+
+body.light-mode .creator-image img {
+  border-color: #900;
+  box-shadow: none;
+}
+
+body.light-mode .site-footer {
+  background-color: #eee;
+  color: #111;
+  border-top-color: #900;
+}
+
+body.light-mode .footer-icons a {
+  color: #900;
+}
+
+body.light-mode .footer-icons a:hover {
+  color: #600;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .categories {
