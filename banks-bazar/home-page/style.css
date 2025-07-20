@@ -145,15 +145,15 @@ body {
 }
 
 .category-card.clothes {
-  background-image: url('../banks-bazar/images/john-travolta2.webp');
+  background-image: url('../home-page/images/john-travolta2.webp');
 }
 
 .category-card.paraphernalia {
-  background-image: url('../banks-bazar/images/paraphernalia-better.webp');
+  background-image: url('../home-page/images/paraphernalia-better.webp');
 }
 
 .category-card.books {
-  background-image: url('../banks-bazar/images/reading-better.webp');
+  background-image: url('../home-page/images/reading-better.webp');
 }
 
 /* 👤 About the Creator */
@@ -188,7 +188,7 @@ body {
 
 .creator-description h2 {
   font-size: 2rem;
-  color: #fff;
+  color: #e7dcdc;
   margin-bottom: 1rem;
   text-shadow:
     -1px -1px 0 #f00,
