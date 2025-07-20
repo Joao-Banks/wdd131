@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Select the logo image element
   const logoImg = document.querySelector('.site-logo');
+  if (!logoImg) {
+    console.warn('Logo image not found!');
+    return; // Stop the rest of the script
+  }
 
   // Store original and light mode logo URLs
   const darkLogoSrc = logoImg.getAttribute('src');
