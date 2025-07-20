@@ -5,15 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BANKS ULTIMATE BAZAR</title>
   <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
 <body>
   <header class="site-header">
     <div class="header-top">
-      <img src="../banks-bazar/images/best-logo-ever.webp" alt="Banks Bazar Logo" class="site-logo" />
+      <a href="index.html" class="logo-link">
+        <img src="../banks-bazar/images/best-logo-ever.webp" alt="Banks Bazar Logo" class="site-logo" />
+      </a>
       <h1>BANKS ULTIMATE BAZAR</h1>
     </div>
     <nav class="main-nav">
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="clothes.html">Clothes</a></li>
         <li><a href="paraphernalia.html">Paraphernalia</a></li>
         <li><a href="books.html">Books</a></li>
@@ -24,26 +31,52 @@
   <!-- 🔥 Description Box -->
   <section class="site-description">
     <div class="description-box">
-      <p>Welcome to Banks Bazar – your go-to digital skate shop where I sell my old gear, threads, and reads. Whether you're looking to upgrade your style or pick up some rad skate culture items, you’re in the right place.</p>
+      <p>Welcome to Banks Bazar – This platform is used to sell incredible items that I no longer need but others could benefit from. Consider this your new thrift shop experience. Here you will find high quality clothes, books and miscelaneous items that you can't find anywhere else for a minimal price.</p>
     </div>
   </section>
 
   <main>
     <section class="categories">
-      <div class="category-card clothes">
+      <a href="clothes.html" class="category-card clothes">
         <h2>Clothes</h2>
-      </div>
-      <div class="category-card paraphernalia">
+      </a>
+      <a href="paraphernalia.html" class="category-card paraphernalia">
         <h2>Paraphernalia</h2>
-      </div>
-      <div class="category-card books">
+      </a>
+      <a href="books.html" class="category-card books">
         <h2>Books</h2>
+      </a>
+    </section>
+
+    <!-- 👤 About the Creator -->
+    <section class="about-creator">
+      <div class="creator-container">
+        <div class="creator-image">
+          <img src="../banks-bazar/images/creator-photo.jpeg" alt="Photo of the creator" />
+        </div>
+        <div class="creator-description">
+          <h2>About the Creator</h2>
+          <p>
+            Hey there! I'm Banks, the mind behind this unique thrift-style bazar. I'm passionate about giving quality items a second life and helping people find hidden gems at unbeatable prices. Every piece on this site was part of my own journey — now it might be part of yours. Shaka!
+          </p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2025 Skate Shop. All rights reserved.</p>
+    <div class="footer-icons">
+      <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://facebook.com/yourprofile" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+    <p>&copy; 2025 Banks Bazar. All rights reserved.</p>
   </footer>
 </body>
 </html>
