@@ -1,4 +1,4 @@
-/* Reset + Base Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -171,7 +171,7 @@ body {
   margin: 0 auto;
 }
 
-/* UPDATED: Container uses grid with 3 columns */
+/*Container uses GRID with 3 columns */
 #philosophy-books-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -200,7 +200,7 @@ body {
   display: block;
 }
 
-/* UPDATED: Book title with red outline style */
+/*Book title with red outline style */
 .book-card h3 {
   color: #e7dcdc;
   margin-bottom: 0.5rem;
@@ -229,7 +229,7 @@ body {
   color: #fff;
 }
 
-/* Outlined Title (like About the Creator on main page) */
+/* Outlined Title (like the one for About the Creator on main page) */
 .outlined-title {
   font-size: 2rem;
   color: #e7dcdc;
@@ -275,7 +275,7 @@ body {
   color: #fff;
 }
 
-/* Responsive Design */
+/* Responsive Design - Media Queries */
 @media (max-width: 768px) {
   .books-section {
     flex-direction: column;
